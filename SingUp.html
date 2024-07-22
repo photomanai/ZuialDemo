@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SingUp.css" />
+    <title>Form</title>
+  </head>
+  <body>
+
+    <div class="background">
+      <img src="img/left.svg">
+      <img src="img/right.svg">
+    </div>
+
+    <div class="container" id="container">
+      <div class="form-container sign-in-container" id="sign__in">
+        <form action="#">
+          <div class="header">Giriş yap</div>
+          <!-- <div class="social__media__container">
+                    <a href="#" target="_blank" class="social codepen">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="social google">
+                        <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social instagram">
+
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div> -->
+          <small class="under__social">
+            <a href="#" class="link signup-link"
+              >veya hesabınızı kullanın</a
+            >
+          </small>
+
+          <div class="button-input-group">
+            <div class="group input-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="group input-group">
+              <input
+                type="password"
+                placeholder="Şifre"
+                required
+                pattern=".{8,}"
+              />
+            </div>
+            <div class="alert-text signup__alert">
+              <span class="help__text">En az 8 karakter!</span>
+            </div>
+            <div class="form-link forgot">
+              <a href="#" class="login-link">şifreni unuttun?</a>
+            </div>
+            <div class="group button-group">
+              <button class="signin-btn" onclick="return false;">
+                Giriş yap
+              </button>
+            </div>
+
+            <div class="log__in___adata">
+              <h5 class="" onclick="myFunction___hi()">
+                Bu web sitesine kaydolun
+              </h5>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Selam dostum!</h1>
+            <p>
+              Kişisel bilgilerinizi girin ve yolculuğunuza bizimle başlayın
+            </p>
+
+            <div class="group button-group">
+              <button class="ghost" id="signUp">Üye olmak</button>
+            </div>
+            <footer>
+              <p><a href="#" target="_blank">Zuical</a> tarafından yapılmıştır</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

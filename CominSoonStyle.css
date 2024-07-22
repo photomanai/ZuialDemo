@@ -1,0 +1,205 @@
+:root {
+  --dl-color-gray-300: #d9dbe1ff;
+  --dl-color-gray-700: #969babff;
+  --dl-color-gray-800: #474a57ff;
+  --dl-color-gray-900: #18191fff;
+  --dl-color-pink-100: #ffb1e6ff;
+  --dl-color-pink-800: #ff72d2ff;
+  --dl-size-size-unit: 1rem;
+  --dl-color-gray-black: #000000ff;
+  --dl-color-gray-white: #ffffff;
+  --dl-color-orange-100: #ffe3c1ff;
+  --dl-color-orange-800: #ffc278ff;
+  --dl-color-purple-100: #f1e4ffff;
+  --dl-color-purple-800: #d6b1ffff;
+  --dl-color-purple-900: #ac69f8ff;
+  --dl-space-space-unit: 1rem;
+  --dl-color-purple-1000: #6209c6ff;
+  --dl-color-pink-default: #f22bb2ff;
+  --dl-size-size-halfunit: 0.5rem;
+  --dl-color-turquoise-100: #d5fafcff;
+  --dl-color-turquoise-800: #75e3eaff;
+  --dl-radius-radius-round: 50%;
+  --dl-color-orange-default: #fe9a22ff;
+  --dl-color-purple-default: #8c30f5ff;
+  --dl-size-size-doubleunit: 2rem;
+  --dl-size-size-tripleunit: 3rem;
+  --dl-space-space-halfunit: 0.5rem;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius6: 6px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-doubleunit: 2rem;
+  --dl-space-space-tripleunit: 3rem;
+  --dl-color-turquoise-default: #2ec5ceff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dl-color-purple-800);
+}
+
+.main-container {
+  width: 85%;
+  overflow: hidden;
+  margin: var(--dl-size-size-tripleunit) auto;
+  background-color: var(--dl-color-gray-white);
+  border-radius: var(--dl-radius-radius-radius8);
+  position: relative;
+  z-index: -1;
+}
+
+.img21 {
+  position: absolute;
+  top: 22rem;
+  z-index: -1;
+}
+
+.img22 {
+  position: absolute;
+  top: 3rem;
+  right: -10rem;
+  z-index: -1;
+}
+
+.header-container {
+  width: 95%;
+  margin: auto;
+  padding: var(--dl-size-size-unit) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-conatiner {
+  width: 8rem;
+}
+
+.img01 {
+  width: 8rem;
+}
+
+.a-container {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.text01 {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dl-color-purple-default);
+}
+
+.text02 {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dl-color-purple-default);
+}
+
+.mid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container11 {
+  width: 15rem;
+}
+
+.img11 {
+  width: 15rem;
+}
+
+.text-container {
+  text-align: center;
+  margin: var(--dl-size-size-doubleunit);
+}
+
+.text11 {
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--dl-color-purple-900);
+  margin-bottom: var(--dl-size-size-doubleunit);
+  letter-spacing: 25px;
+}
+
+.text12 {
+  font-size: 18px;
+  color: var(--dl-color-purple-800);
+  letter-spacing: 20px;
+}
+
+.footer-container{
+    width: 100%;
+    margin: var(--dl-size-size-tripleunit) auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input-text{
+    font-size: 15px;
+    padding: 8px 15px;
+    margin-top: var(--dl-size-size-doubleunit);
+    border: 2px solid var(--dl-color-purple-900);
+    border-top-left-radius: var(--dl-radius-radius-radius6);
+    border-bottom-left-radius: var(--dl-radius-radius-radius6);
+}
+
+.input-submit{
+    transition: .3s;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin-top: var(--dl-size-size-doubleunit);
+    border: 2px solid var(--dl-color-purple-900);
+    border-top-right-radius: var(--dl-radius-radius-radius6);
+    border-bottom-right-radius: var(--dl-radius-radius-radius6);
+    background-color: var(--dl-color-purple-900);
+    color: var(--dl-color-gray-white);
+}
+
+.input-submit:hover{
+    background-color: var(--dl-color-purple-800);
+}
+
+.input-submit:focus{
+    background-color: var(--dl-color-purple-100);
+}
+
+@media (max-width: 1000px) {
+  .text11{
+    letter-spacing: 1px;
+  }
+
+  .text12{
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .img01{
+    display: none;
+  }
+
+  .text11{
+    letter-spacing: 1px;
+    font-size: 50px;
+  }
+
+  .text12{
+    letter-spacing: 1px;
+  }
+
+  .input-text{
+    font-size: 5px;
+    /* padding: 0; */
+  }
+}
